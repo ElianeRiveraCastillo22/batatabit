@@ -61,3 +61,106 @@
     width: 1.5rem;
     background-image: url("../../assets/icons/mdi_keyboard_arrow_down.svg");
 }
+/*main-exchange*/
+.exchange{
+    background: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.exchange__img{
+    background-image: url(../../assets/movil/bitcoin.png);
+    width: 12rem;
+    height: 12rem;
+    margin-top: 3.5rem;
+}
+.exchange__container-info {
+    width: 100%;
+    max-width: 466px;
+}
+.exchange__container-info h2{
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.exchange__container-info p{
+    color: var(--Grey, #BABABA);
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 3rem;
+}
+section.exchange__container-table {
+    min-width: 15.5rem;
+    max-width: 18.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.exchange__container-table > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:relative
+}
+.exchange__title{
+    padding:.75rem;
+    color: #FF9536;
+    font-weight: 700;
+    color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: flex-start;
+    font-size: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
+}
+.exchange_table {
+    padding: 0rem .75rem;
+    max-width: 15.75rem;
+    min-width: 12.375rem;
+
+}
+.exchange__body{
+    background: var(--just-white);
+    border-radius: .5rem;
+    display: table;
+}
+.exchange__body td{
+    padding: .75rem .625rem;
+}
+.table__criptomoneda {
+    border-right: solid var(--off-white);
+    border-bottom: solid var(--off-white);
+    font-size: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
+    color: #B5B0AC;
+    font-family: var(--font-inter);
+    font-weight: 500;
+}
+.table__price {
+    border-bottom: solid var(--off-white);
+    color: #757575;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+}
+.exchange__icon--row-right{
+    background-image: url(../../assets/icons/more.svg);
+    transform: rotate(270deg);
+    width: 1.75rem;
+    height: 1.75rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    right: -8%;
+}
+.exchange__container-table--value{
+    border-radius: .5rem;
+    padding: .5rem;
+    background: var(--soft--orange);
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+    color: var(--warm-black-1);
+    font-family: var(--font-inter);
+    font-weight: 400;
+}
