@@ -14,6 +14,7 @@
     /* font */
     --font--sans:'DM Sans', sans-serif;
     --font--inter:'Inter', sans-serif;
+    --font--buttons:clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,15 +30,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    min-height: 100dvd;
-    min-height: 100dvs;
+    min-height: 100dvb;
     font-size: 100%;
     line-height: calc(1em + 0.5rem);
     font-smooth: always;
     font-family: var(--font--sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: var(--font--sans);
+    font-family: var(--font--sans);
 }
 h1{
     font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
@@ -45,9 +45,18 @@ h1{
 h2{
     font-size: clamp(0.875rem, 0.768rem + 0.536vw, 1.25rem);
 }
+p{
+    font-size: clamp(0.875rem, 0.768rem + 0.536vw, 1.25rem);
+}
+a{
+    font-size: clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    line-height: calc(1em + 0.5rem);
+}
 
-
-img, picture, video, iframe, figure{
+img, picture, video, iframe{
     max-width: 100%;
     width: 100%;
     display: block;
