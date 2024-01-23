@@ -391,7 +391,7 @@ section.exchange__container-table > div{
 }
 .invitation__questions{
     display: flex;
-    row-gap: 2rem;
+    row-gap: 2.5rem;
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 1rem 4rem;
@@ -400,6 +400,7 @@ section.exchange__container-table > div{
     color: var(--warm-black);
     text-align: center;
     font-weight: 700;
+    max-width: 28.75rem;
 }
 .invitation__question summary{
     display: flex;
@@ -414,8 +415,8 @@ section.exchange__container-table > div{
 }
 .invitation__question summary::after{
     content: '';
-    min-height: 24px;
-    min-width: 24px;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     background: url("../../assets/icons/mdi_keyboard_arrow_down.svg");
 
     transform: 0.2s;
@@ -423,6 +424,9 @@ section.exchange__container-table > div{
 .invitation__container {
     max-width: 29.125rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 .invitation__question[open] > summary::after {
     transform: rotate(180deg);
