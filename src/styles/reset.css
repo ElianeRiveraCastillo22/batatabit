@@ -1,0 +1,99 @@
+:root{
+    /* Colors */
+    --linear-bg:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --bitcoin-orange:#F7931A;
+    --soft--orange:#FFE9D4;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-1:#282623;
+    --grey:#BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+
+    /* font */
+    --font--sans:'DM Sans', sans-serif;
+    --font--inter:'Inter', sans-serif;
+    --font--buttons:clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100dvb;
+    font-size: 100%;
+    line-height: calc(1em + 0.5rem);
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font--sans);
+}
+h1{
+    font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+}
+h2{
+    font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+}
+p{
+    font-size: clamp(0.875rem, 0.768rem + 0.536vw, 1.25rem);
+}
+a{
+    font-size: clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    line-height: calc(1em + 0.5rem);
+}
+
+img, picture, video, iframe{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+a{
+    display: block;
+}
+p a{
+    display: inline;
+}
+li{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, em{
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+blockquote::before, blockquote::after, q::after{
+    content: '';
+    content: none;
+}
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
