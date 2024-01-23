@@ -246,6 +246,7 @@ section.exchange__container-table > div{
     display: flex;
     flex-direction: column;
     row-gap: .625rem;
+    min-height: 11.875rem;
 }
 .benefits__item-logo img{
     min-width: 1.5rem;
