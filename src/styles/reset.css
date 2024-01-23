@@ -34,7 +34,6 @@ body{
     font-size: 100%;
     line-height: calc(1em + 0.5rem);
     font-smooth: always;
-    font-family: var(--font--sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font--sans);

@@ -77,7 +77,7 @@
 }
 .exchange__container-info {
     width: 100%;
-    max-width: 466px;
+    max-width: 29.125rem;
 }
 .exchange__container-info h2{
     color: var(--warm-black);
@@ -127,21 +127,46 @@ section.exchange__container-table > div{
 }
 .exchange__body td{
     padding: .75rem .625rem;
+    column-gap: .25rem;
 }
 .table__criptomoneda {
-    border-right: solid var(--off-white);
-    border-bottom: solid var(--off-white);
     font-size: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
     color: #B5B0AC;
     font-family: var(--font-inter);
     font-weight: 500;
 }
 .table__price {
-    border-bottom: solid var(--off-white);
     color: #757575;
     font-family: var(--font-inter);
     font-weight: 400;
     font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+}
+.tb_border{
+    border-right: solid var(--off-white);
+    border-bottom: solid var(--off-white);
+}
+.tb_border-2{
+    border-bottom: solid var(--off-white);
+}
+.tb_border-3{
+    border-right: solid var(--off-white);
+}
+.table__price {
+    display: flex;
+    align-items: center;
+}
+.table__icon{
+    display: inline-block;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.table__icon--down{
+    background-image: url("../../assets/icons/trending-down.svg");
+}
+.table__icon--up{
+    background-image: url("../../assets/icons/trending-up.svg");
 }
 .exchange__icon--row-right{
     background-image: url(../../assets/icons/more.svg);
@@ -159,8 +184,10 @@ section.exchange__container-table > div{
     background: var(--soft--orange);
     width: fit-content;
     margin-top: 1rem;
+    margin-bottom: 4rem;
     font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
     color: var(--warm-black-1);
     font-family: var(--font-inter);
     font-weight: 400;
 }
+
