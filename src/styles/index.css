@@ -233,7 +233,7 @@ section.exchange__container-table > div{
     flex-direction: column;
     row-gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 2rem;
     /* max-height: 500px; tablet */
 }
 .benefits__item {
@@ -241,12 +241,12 @@ section.exchange__container-table > div{
     border-radius: .25rem;
     background: var(--warm-black-1);
     border-radius: .25rem;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-    max-width: 380px;
+    box-shadow: 0rem .25rem .5rem 0rem rgba(0, 0, 0, 0.16);
+    max-width: 23.75rem;
     display: flex;
     flex-direction: column;
     row-gap: .625rem;
-    min-height: 11.875rem;
+    min-height: 14rem;
 }
 .benefits__item-logo img{
     min-width: 1.5rem;
@@ -257,8 +257,181 @@ section.exchange__container-table > div{
 .benefits__item h3{
     color: var(--just-white);
     font-weight: 700;
+    font-size: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
 }
 .benefits__item p{
     color: #808080;
     font-weight: 500;
+}
+
+/*Plans*/
+.plans {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.125rem;
+}
+.plans__today.today {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today__title {
+    position: absolute;
+    top: 16%;
+    color: var(--just-white);
+    text-align: center;
+    font-weight: 700;
+}
+.plans__invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.invitation__presentation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 29.125rem;
+    padding: 0rem 1rem 0rem;
+}
+.invitation__presentation > h2 {
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+}
+.invitation__presentation > p {
+    color: #757575;
+    text-align: center;
+    font-weight: 500;
+}
+.invitation__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.invitation__card {
+    border-radius: .5rem;
+    background: var(--Just-White, #FFF);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    position: relative;
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    row-gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+.invitation__cards-content {
+    display: flex;
+    overflow-x: auto;
+    column-gap: .5rem;
+    justify-content: center;
+}
+.invitation__btn--recommended {
+    position: absolute;
+    border-radius: .5rem;
+    background: var(--bitcoin-orange);
+    padding: .5rem;
+    top: -10%;
+    color: var(--just-white);
+    font-family: var(--font-inter);
+    font-size: clamp(0.75rem, 0.661rem + 0.238vw, 0.875rem);
+    font-weight: 700;
+}
+.invitation__payment {
+    color: #000;
+    margin-top: .75rem;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 500;
+}
+.invitation__savings {
+    max-width: 11.25rem;
+    color: #757575;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    line-height: normal;
+    min-width: 10rem;
+    font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+}
+.invitation__price > strong{
+    color: #000;
+    font-family: var(--font-inter);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4.16px;
+}
+.invitation__price > sub{
+    font-size: .75rem;
+    color: #363636;
+    font-family: var(--font-inter);
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--off-white);
+}
+.invitation__btn--more {
+    border: .125rem solid var(--bitcoin-orange);
+    background: var(--off-white);
+    display: inline-flex;
+    padding: .75rem 1rem;
+    gap: .5rem;
+    border-radius: .25rem;
+    margin-top: 1rem;
+    margin-top: .75rem;
+}
+.invitation__btn--more span {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    display: inline-block;
+    background-image: url(../../assets/icons/arrow-right.svg);
+}
+.invitation__questions{
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem 4rem;
+}
+.invitation__questions > h2{
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+}
+.invitation__question summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #757575;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 500;
+    line-height: normal;
+    gap: 1.0625rem;
+    color: var(--Warm-Black, #201E1C);
+}
+.invitation__question summary::after{
+    content: '';
+    min-height: 24px;
+    min-width: 24px;
+    background: url("../../assets/icons/mdi_keyboard_arrow_down.svg");
+
+    transform: 0.2s;
+}
+.invitation__container {
+    max-width: 29.125rem;
+    width: 100%;
+}
+.invitation__question[open] > summary::after {
+    transform: rotate(180deg);
+  }
+.invitation__question p{
+    color: #757575;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: normal;
+    padding: 1.25rem 0rem;
 }
