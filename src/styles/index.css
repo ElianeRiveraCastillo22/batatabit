@@ -23,12 +23,8 @@
     max-width: 39.5rem;
 }
 .header__title {
-   max-width: 39.5rem;
-}
-.header__title {
+    max-width: 39.5rem;
     text-align: center;
-}
-.header__title{
     color: var(--just-white);
     font-weight: 700;
     text-align: center;
@@ -231,10 +227,9 @@ section.exchange__container-table > div{
 .benefits__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    gap: 1rem;
     flex-wrap: wrap;
     margin-top: 2rem;
-    /* max-height: 500px; tablet */
 }
 .benefits__item {
     padding: 1.25rem;
@@ -270,7 +265,7 @@ section.exchange__container-table > div{
     flex-direction: column;
     row-gap: 5.125rem;
 }
-.plans__today.today {
+.plans__today {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -388,6 +383,8 @@ section.exchange__container-table > div{
     min-height: 1.5rem;
     display: inline-block;
     background-image: url(../../assets/icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .invitation__questions{
     display: flex;
@@ -445,13 +442,13 @@ section.exchange__container-table > div{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 2.5rem;
 }
 .footer__container{
     max-width: 29.125rem;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 5.25rem 0rem;
     justify-content: space-between;
 }
 .footer__networks {
@@ -459,18 +456,29 @@ section.exchange__container-table > div{
     display: flex;
     flex-direction: column;
 }
-.footer__networks li{
-    color: var(--just-white);
-    font-size: 20px;
-    font-weight: 500;
-}
 section.footer__img {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    align-items: center;
 }
-.footer__img  p{
+.footer__img p{
     color:var(--soft--orange);
     font-style: normal;
     font-weight: 500;
+    font-size: clamp(0.5rem, 0.054rem + 1.19vw, 1.125rem);
+}
+.footer__img img{
+    max-width: 7.5rem;
+}
+.footer__networks a{
+    color: var(--just-white);
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
+}
+
+@media (width >= 1024px) {
+    .benefits__list {
+        max-height: 30rem;
+    }
 }

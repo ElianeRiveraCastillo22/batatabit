@@ -8,11 +8,11 @@
     <meta name="author" content="Eliane Rivera">
     <meta name="application-name" content="Batata bit">
     <meta name="generator" content="VSCode">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/apple-touch-icon.png" href="../assets/icons/favicon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Batata bit</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script type="module" src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -30,7 +29,7 @@
         <div class="header__presentation">
             <h1 class="header__title">La próxima revolución en el intercambio de criptomonedas.</h1>
             <p class="header__description">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header__redirect">Conoce Nuestros Planes<span></span></a>
+            <a href="#plans" class="header__redirect">Conoce Nuestros Planes<span></span></a>
         </div>
     </header>
     <main class="main">
@@ -120,7 +119,7 @@
                 </picture>
                 <h2 class="today__title">Conócelo hoy.</h2>
             </section>
-            <section class="plans__invitation invitation">
+            <section class="plans__invitation invitation" id="plans">
                 <div class="invitation__presentation">
                     <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                     <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
@@ -135,7 +134,7 @@
                                 <strong>49</strong>
                             </div>
                             <p class="invitation__savings">*Ahorras $129 comparado al plan mensual.</p>
-                            <a  class="invitation__btn--more" href="">Escoger este <span></span></a>
+                            <a  class="invitation__btn--more" href="#">Escoger este <span></span></a>
                         </article>
 
                         <article class="invitation__card">
@@ -146,7 +145,7 @@
                                 <strong>49</strong>
                             </div>
                             <p class="invitation__savings">*Ahorras $129 comparado al plan mensual.</p>
-                            <a  class="invitation__btn--more" href="">Escoger este <span></span></a>
+                            <a  class="invitation__btn--more" href="#">Escoger este <span></span></a>
                         </article>
                         <article class="invitation__card">
                             <p class="invitation__btn--recommended">Recomendado</p>
@@ -156,7 +155,7 @@
                                 <strong>49</strong>
                             </div>
                             <p class="invitation__savings">*Ahorras $129 comparado al plan mensual.</p>
-                            <a  class="invitation__btn--more" href="">Escoger este <span></span></a>
+                            <a  class="invitation__btn--more" href="#">Escoger este <span></span></a>
                         </article>
 
                     </div>
@@ -164,19 +163,19 @@
                 <section class="invitation__questions">
                     <h2>Batabit me permite hacer compras en su plataforma?</h2>
                     <section class="invitation__container">
-                        <details class="invitation__question" open>
+                        <details class="invitation__question" >
                             <summary>Batabit me permite hacer compras en su plataforma?</summary>
                             <p>Información del contenido del acordeón.</p>
                         </details>
-                        <details class="invitation__question" open>
+                        <details class="invitation__question" >
                             <summary>Qué es Bitcoin?</summary>
                             <p>Información del contenido del acordeón.</p>
                         </details>
-                        <details class="invitation__question" open>
+                        <details class="invitation__question" >
                             <summary>Cómo puedo realizar una transacción en bitcoins?</summary>
                             <p>Información del contenido del acordeón.</p>
                         </details>
-                        <details class="invitation__question" open>
+                        <details class="invitation__question" >
                             <summary>Cómo puedo realizar una transacción en bitcoins?</summary>
                             <p>Información del contenido del acordeón.</p>
                         </details>
@@ -188,9 +187,9 @@
     <footer class="footer">
         <div class="footer__container">
             <ul class="footer__networks">
-                <li class="a">Linkedin</li>
-                <li class="a">Crunchbase</li>
-                <li class="a">Hackernews</li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Hackernews</a></li>
+                <li><a href="#">Crunchbase</a></li>
             </ul>
             <section class="footer__img">
                 <img src="../assets/icons/logo-batata.svg" alt="logo de batatabit">
