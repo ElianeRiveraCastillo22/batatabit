@@ -1,0 +1,476 @@
+@import url(reset.css);
+
+/* Header */
+.header{
+    background: linear-gradient(208deg, #201E1C 16.69%, #F7931A 100%);
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+}
+.header__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__logo img{
+    padding: 2.25rem;
+    max-width: 39.5rem;
+}
+.header__title {
+   max-width: 39.5rem;
+}
+.header__title {
+    text-align: center;
+}
+.header__title{
+    color: var(--just-white);
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.header__description{
+    color: var(--Soft-Orange, #FFE9D4);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3.25rem;
+}
+.header__redirect {
+    padding: .75rem 1rem;
+    width: fit-content;
+    color: var(--warm-black, #201E1C);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    background: #FAF8F7;
+    box-shadow: 0rem .25rem .5rem 0rem rgba(89, 73, 30, 0.16);
+    column-gap: .5rem;
+    position: absolute;
+    bottom: -6%;
+}
+.header__redirect span{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url("../../assets/icons/mdi_keyboard_arrow_down.svg");
+}
+/*main-exchange*/
+.exchange{
+    background: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.exchange__img{
+    background-image: url(../../assets/movil/bitcoin.png);
+    width: 12rem;
+    height: 12rem;
+    margin-top: 3.5rem;
+}
+.exchange__container-info {
+    width: 100%;
+    max-width: 29.125rem;
+}
+.exchange__container-info h2{
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.exchange__container-info p{
+    color: var(--Grey, #BABABA);
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 3rem;
+}
+section.exchange__container-table {
+    min-width: 15.5rem;
+    max-width: 18.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.exchange__container-table > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:relative
+}
+.exchange__title{
+    padding:.75rem;
+    color: #FF9536;
+    font-weight: 700;
+    color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: flex-start;
+    font-size: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
+}
+.exchange_table {
+    padding: 0rem .75rem;
+    max-width: 15.75rem;
+    min-width: 12.375rem;
+
+}
+.exchange__body{
+    background: var(--just-white);
+    border-radius: .5rem;
+    display: table;
+}
+.exchange__body td{
+    padding: .75rem .625rem;
+    column-gap: .25rem;
+}
+.table__criptomoneda {
+    font-size: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
+    color: #B5B0AC;
+    font-family: var(--font-inter);
+    font-weight: 500;
+}
+.table__price {
+    color: #757575;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+}
+.tb_border{
+    border-right: solid var(--off-white);
+    border-bottom: solid var(--off-white);
+}
+.tb_border-2{
+    border-bottom: solid var(--off-white);
+}
+.tb_border-3{
+    border-right: solid var(--off-white);
+}
+.table__price {
+    display: flex;
+    align-items: center;
+}
+.table__icon{
+    display: inline-block;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.table__icon--down{
+    background-image: url("../../assets/icons/trending-down.svg");
+}
+.table__icon--up{
+    background-image: url("../../assets/icons/trending-up.svg");
+}
+.exchange__icon--row-right{
+    background-image: url(../../assets/icons/more.svg);
+    transform: rotate(270deg);
+    width: 1.75rem;
+    height: 1.75rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    right: -8%;
+}
+.exchange__container-table--value{
+    border-radius: .5rem;
+    padding: .5rem;
+    background: var(--soft--orange);
+    width: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+    color: var(--warm-black-1);
+    font-family: var(--font-inter);
+    font-weight: 400;
+}
+
+/*Benefit*/
+.benefits {
+    padding: 4rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--warm-black);
+}
+.benefits__logo-batata {
+    position: absolute;
+    top: -1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.benefits__logo-batata > img {
+    min-width: 1.75rem;
+    min-height: 1.75rem;
+
+}
+.benefits__description {
+    max-width: 29.125rem;
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.benefits__description h2{
+    color: var(--just-white);
+    font-weight: 700;
+    text-align: center;
+}
+.benefits__description p{
+    color: #808080;
+    text-align: center;
+}
+.benefits__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* max-height: 500px; tablet */
+}
+.benefits__item {
+    padding: 1.25rem;
+    border-radius: .25rem;
+    background: var(--warm-black-1);
+    border-radius: .25rem;
+    box-shadow: 0rem .25rem .5rem 0rem rgba(0, 0, 0, 0.16);
+    max-width: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .625rem;
+    min-height: 14rem;
+}
+.benefits__item-logo img{
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    max-width: 1.75rem;
+    max-height: 1.75rem;
+}
+.benefits__item h3{
+    color: var(--just-white);
+    font-weight: 700;
+    font-size: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
+}
+.benefits__item p{
+    color: #808080;
+    font-weight: 500;
+}
+
+/*Plans*/
+.plans {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.125rem;
+}
+.plans__today.today {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today__title {
+    position: absolute;
+    top: 16%;
+    color: var(--just-white);
+    text-align: center;
+    font-weight: 700;
+}
+.plans__invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.invitation__presentation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 29.125rem;
+    padding: 0rem 1rem 0rem;
+}
+.invitation__presentation > h2 {
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+}
+.invitation__presentation > p {
+    color: #757575;
+    text-align: center;
+    font-weight: 500;
+}
+.invitation__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.invitation__card {
+    border-radius: .5rem;
+    background: var(--Just-White, #FFF);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    position: relative;
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    row-gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+.invitation__cards-content {
+    display: flex;
+    overflow-x: auto;
+    column-gap: .5rem;
+    justify-content: center;
+}
+.invitation__btn--recommended {
+    position: absolute;
+    border-radius: .5rem;
+    background: var(--bitcoin-orange);
+    padding: .5rem;
+    top: -10%;
+    color: var(--just-white);
+    font-family: var(--font-inter);
+    font-size: clamp(0.75rem, 0.661rem + 0.238vw, 0.875rem);
+    font-weight: 700;
+}
+.invitation__payment {
+    color: #000;
+    margin-top: .75rem;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 500;
+}
+.invitation__savings {
+    max-width: 11.25rem;
+    color: #757575;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    line-height: normal;
+    min-width: 10rem;
+    font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+}
+.invitation__price > strong{
+    color: #000;
+    font-family: var(--font-inter);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4.16px;
+}
+.invitation__price > sub{
+    font-size: .75rem;
+    color: #363636;
+    font-family: var(--font-inter);
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--off-white);
+}
+.invitation__btn--more {
+    border: .125rem solid var(--bitcoin-orange);
+    background: var(--off-white);
+    display: inline-flex;
+    padding: .75rem 1rem;
+    gap: .5rem;
+    border-radius: .25rem;
+    margin-top: 1rem;
+    margin-top: .75rem;
+}
+.invitation__btn--more span {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    display: inline-block;
+    background-image: url(../../assets/icons/arrow-right.svg);
+}
+.invitation__questions{
+    display: flex;
+    row-gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem 4rem;
+}
+.invitation__questions > h2{
+    color: var(--warm-black);
+    text-align: center;
+    font-weight: 700;
+    max-width: 28.75rem;
+}
+.invitation__question summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #757575;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 500;
+    line-height: normal;
+    gap: 1.0625rem;
+    color: var(--Warm-Black, #201E1C);
+}
+.invitation__question summary::after{
+    content: '';
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    background: url("../../assets/icons/mdi_keyboard_arrow_down.svg");
+
+    transform: 0.2s;
+}
+.invitation__container {
+    max-width: 29.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.invitation__question[open] > summary::after {
+    transform: rotate(180deg);
+  }
+.invitation__question p{
+    color: #757575;
+    font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: normal;
+    padding: 1.25rem 0rem;
+}
+/*footer*/
+.footer{
+    background: var(--bitcoin-orange);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer__container{
+    max-width: 29.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5.25rem 0rem;
+    justify-content: space-between;
+}
+.footer__networks {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer__networks li{
+    color: var(--just-white);
+    font-size: 20px;
+    font-weight: 500;
+}
+section.footer__img {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.footer__img  p{
+    color:var(--soft--orange);
+    font-style: normal;
+    font-weight: 500;
+}
